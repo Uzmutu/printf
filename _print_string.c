@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_char - Prints character
- * @arg: list of arguments
+ * @arg: arguments
  *
  * Return: Will return the amount of characters printed.
  */
@@ -13,7 +13,7 @@ int print_char(va_list arg)
 
 /**
  * print_str - Prints a string
- * @arg: list of arguments
+ * @arg: arguments
  *
  * Return: Will return the amount of characters printed.
  */
@@ -29,3 +29,15 @@ int print_str(va_list arg)
 		_putchar(str[i]);
 	return (i);
 }
+/**
+ * print_percent - Prints a percent symbol
+ * @arg: arguments
+ *
+ * Return: Will return the amount of characters printed.
+ */
+int print_percent(__attribute__((unused))va_list arg)
+{
+	_putchar('%');
+	return (1);
+}
+
